@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_is_negative.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dogpark <dogpark@student.42seoul.k>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/29 16:18:12 by dogpark           #+#    #+#             */
-/*   Updated: 2022/10/02 22:19:15 by dogpark          ###   ########.fr       */
+/*   Created: 2022/09/29 16:38:39 by dogpark           #+#    #+#             */
+/*   Updated: 2022/10/02 22:19:32 by dogpark          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_print_alphabet(void)
+void	ft_is_negative(int n)
 {
-	char	alphabet;
-
-	alphabet = 'a';
-	while (alphabet <= 'z')
+	if (n < 0)
 	{
-		write(1, &alphabet, 1);
-		alphabet ++;
+		write(1, "N", 1);
+	}
+	if (n >= 0)
+	{
+		write(1, "P", 1);
 	}
 }

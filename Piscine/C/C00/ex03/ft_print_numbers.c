@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dogpark <dogpark@student.42seoul.k>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/29 16:18:12 by dogpark           #+#    #+#             */
-/*   Updated: 2022/10/02 22:19:15 by dogpark          ###   ########.fr       */
+/*   Created: 2022/09/29 16:28:25 by dogpark           #+#    #+#             */
+/*   Updated: 2022/10/02 22:19:26 by dogpark          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_print_alphabet(void)
+void	ft_print_numbers(void)
 {
-	char	alphabet;
+	char	number;
 
-	alphabet = 'a';
-	while (alphabet <= 'z')
+	number = '0';
+	while (number <= '9')
 	{
-		write(1, &alphabet, 1);
-		alphabet ++;
+		write(1, &number, 1);
+		number ++;
 	}
 }

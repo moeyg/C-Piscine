@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dogpark <dogpark@student.42seoul.k>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/29 16:18:12 by dogpark           #+#    #+#             */
-/*   Updated: 2022/10/02 22:19:15 by dogpark          ###   ########.fr       */
+/*   Created: 2022/09/29 16:22:06 by dogpark           #+#    #+#             */
+/*   Updated: 2022/09/29 16:36:54 by dogpark          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_print_alphabet(void)
+void	ft_print_reverse_alphabet(void)
 {
 	char	alphabet;
 
-	alphabet = 'a';
-	while (alphabet <= 'z')
+	alphabet = 'z';
+	while (alphabet >= 'a')
 	{
 		write(1, &alphabet, 1);
-		alphabet ++;
+		alphabet --;
 	}
 }
