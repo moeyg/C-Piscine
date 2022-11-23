@@ -12,15 +12,15 @@
 
 #include <stdlib.h>
 
-int	ft_strlen(char *str);
-int	ft_total_strlen(int size, char **strs, char *sep);
+int		ft_strlen(char *str);
+int		ft_total_strlen(int size, char **strs, char *sep);
 char	*ft_strcat(char *dest, char *src);
 
 char	*ft_strjoin(int size, char **strs, char *sep)
 {
-	int	index;
-	int	total_length;
 	char	*result;
+	int		index;
+	int		total_length;
 
 	index = 0;
 	total_length = ft_total_strlen(size, strs, sep);

@@ -14,7 +14,7 @@
 
 int	*ft_range(int min, int max)
 {
-	int		*array;
+	int			*array;
 	long long	index;
 
 	if (min >= max)

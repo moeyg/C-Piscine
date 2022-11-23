@@ -12,9 +12,9 @@
 
 #include <stdlib.h>
 
-int	ft_atoi_base(char *nbr, char *base, int radix);
-int	ft_check_base(char *base);
-int	ft_divide_integers_by_base(int integer, int radix);
+int		ft_atoi_base(char *nbr, char *base, int radix);
+int		ft_check_base(char *base);
+int		ft_divide_integers_by_base(int integer, int radix);
 char	*ft_convert_number(int integer, int radix, char *base);
 
 char	*ft_convert_base(char *nbr, char *base_from, char *base_to)
@@ -34,7 +34,7 @@ char	*ft_convert_base(char *nbr, char *base_from, char *base_to)
 int	ft_check_base(char *base)
 {
 	char	*cmp;
-	int	index;
+	int		index;
 
 	index = 0;
 	while (base[index])
@@ -56,12 +56,12 @@ int	ft_check_base(char *base)
 
 char	*ft_convert_number(int integer, int radix, char *base)
 {
-	int	size;
-	int	index;
 	char	*numbers;
+	int		size;
+	int		index;
 
-	size = ft_divide_integers_by_base(integer, radix);
 	numbers = (char *)malloc((sizeof(char) * size + 1));
+	size = ft_divide_integers_by_base(integer, radix);
 	if (!numbers)
 		return (0);
 	numbers[size] = '\0';

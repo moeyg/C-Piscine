@@ -14,7 +14,7 @@
 
 int	ft_ultimate_range(int **range, int min, int max)
 {
-	int		*array;
+	int			*array;
 	long long	index;
 
 	if (min >= max)

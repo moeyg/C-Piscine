@@ -16,12 +16,12 @@ int	ft_strlen(char *str);
 
 char	*ft_strdup(char *src)
 {
-	int	length;
-	int	index;
 	char	*dest;
+	int		length;
+	int		index;
 
-	length = ft_strlen(src);
 	dest = (char *)malloc(sizeof(char) * (length + 1));
+	length = ft_strlen(src);
 	if (dest == 0)
 		return (0);
 	index = 0;

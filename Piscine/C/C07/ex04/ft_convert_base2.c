@@ -14,9 +14,9 @@ int	ft_check_number(char nbr, char *base);
 
 int	ft_atoi_base(char *nbr, char *base, int radix)
 {
-	int		sign;
-	int		number;
-	int		result;
+	int	sign;
+	int	number;
+	int	result;
 
 	if (radix < 2)
 		return (0);

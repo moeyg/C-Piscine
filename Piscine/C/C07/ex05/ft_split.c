@@ -12,18 +12,18 @@
 
 #include <stdlib.h>
 
-int	ft_check_charset(char str, char *charset);
-int	ft_count_words(char *str, char *charset);
+int		ft_check_charset(char str, char *charset);
+int		ft_count_words(char *str, char *charset);
 void	ft_strncpy(char *dest, char *src, int n);
 
 char	**ft_split(char *str, char *charset)
 {
 	char	**result;
-	int	index;
 	char	*string;
+	int	index;
 
-	index = 0;
 	result = (char **)malloc(sizeof(char *) * ft_count_words(str, charset) + 1);
+	index = 0;
 	while (*str)
 	{
 		if (!ft_check_charset(*str, charset))
