@@ -13,12 +13,12 @@
 #include "ft_stock_str.h"
 #include <stdlib.h>
 
-int	ft_strlen(char *str);
+int		ft_strlen(char *str);
 char	*ft_strdup(char *src);
 
 struct	s_stock_str	*ft_strs_to_tab(int ac, char **av)
 {
-	int		index;
+	int	index;
 	t_stock_str	*tab;
 
 	tab = malloc(sizeof(t_stock_str) * (ac + 1));
@@ -51,11 +51,11 @@ int	ft_strlen(char *str)
 char	*ft_strdup(char *src)
 {
 	char	*dest;
-	int	index;
-	int	size;
+	int		index;
+	int		size;
 
-	size = ft_strlen(src);
 	dest = malloc(sizeof(char) * (size + 1));
+	size = ft_strlen(src);
 	if (dest == 0)
 		return (0);
 	index = 0;
