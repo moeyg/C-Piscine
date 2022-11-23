@@ -13,7 +13,7 @@
 #include <unistd.h>
 
 void	ft_swap(char **str1, char **str2);
-int	ft_strcmp(char *s1, char *s2);
+int		ft_strcmp(char *s1, char *s2);
 
 int	main(int argc, char *argv[])
 {
