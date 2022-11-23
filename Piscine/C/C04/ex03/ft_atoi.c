@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_check_sign(char *str);
+int		ft_check_sign(char *str);
 char	*ft_delete_whitespace(char *str);
 char	*ft_putstr(char	*str);
 

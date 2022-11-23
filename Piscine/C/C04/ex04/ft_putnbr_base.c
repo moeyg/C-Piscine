@@ -12,8 +12,8 @@
 
 #include <unistd.h>
 
-int	ft_strlen(char *str);
-int	ft_check_base(char *base, int radix);
+int		ft_strlen(char *str);
+int		ft_check_base(char *base, int radix);
 void	ft_print_numbers(int nbr, char *base, int radix);
 
 void	ft_putnbr_base(int nbr, char *base)
