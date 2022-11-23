@@ -16,12 +16,12 @@ void	ft_putchar(char c);
 
 void	ft_putstr_non_printable(char *str)
 {
-	int				index;
 	char			*hex;
 	unsigned char	string;
+	int				index;
 
-	index = 0;
 	hex = "0123456789abcdef";
+	index = 0;
 	while (str[index] != '\0')
 	{
 		string = str[index];
