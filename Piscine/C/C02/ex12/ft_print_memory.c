@@ -39,8 +39,8 @@ void	ft_print_addr_to_hex(long unsigned int addr)
 	int		string[16];
 	int		index;
 
-	index = -1;
 	hex = "0123456789abcdef";
+	index = -1;
 	while (++index < 16)
 	{
 		string[index] = addr % 16;
@@ -55,11 +55,11 @@ void	ft_print_addr_to_hex(long unsigned int addr)
 
 void	ft_print_char_to_hex(char *str, unsigned int size)
 {
-	int		index;
 	char	*hex;
+	int		index;
 
-	index = 0;
 	hex = "0123456789abcdef";
+	index = 0;
 	while (index < 16 && size-- > 0)
 	{
 		write(1, &hex[((unsigned char)str[index] / 16)], 1);
