@@ -18,7 +18,7 @@ void	ft_print_combn(int n)
 {
 	char	num[10];
 	char	first_digit;
-	int	index;
+	int		index;
 
 	first_digit = '0';
 	index = 1;
