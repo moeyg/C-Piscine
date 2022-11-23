@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strcmp(char *s1, char *s2);
+int		ft_strcmp(char *s1, char *s2);
 void	ft_swap(char **s1, char **s2);
 
 void	ft_sort_string_tab(char **tab)
