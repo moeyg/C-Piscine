@@ -15,10 +15,10 @@
 
 void	print_board(int (*res_arr)[6]);
 void	make_board(int (*res_arr)[6], int *temp_input);
-int	prom_row(int y, int x, int (*res_arr)[6]);
-int	prom_row_rev(int y, int x, int (*res_arr)[6]);
-int	prom_col(int y, int x, int (*res_arr)[6]);
-int	prom_col_rev(int y, int x, int (*res_arr)[6]);
+int		prom_row(int y, int x, int (*res_arr)[6]);
+int		prom_row_rev(int y, int x, int (*res_arr)[6]);
+int		prom_col(int y, int x, int (*res_arr)[6]);
+int		prom_col_rev(int y, int x, int (*res_arr)[6]);
 
 void	make_board(int (*res_arr)[6], int *temp_input)
 {
@@ -66,9 +66,9 @@ void	dfs(int y, int x, int (*res_arr)[6])
 
 void	print_board(int (*res_arr)[6])
 {
-	int	i;
-	int	j;
 	char	temp;
+	int		i;
+	int		j;
 
 	i = 0;
 	while (++i < 5)
